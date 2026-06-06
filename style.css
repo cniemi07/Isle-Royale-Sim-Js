@@ -75,7 +75,6 @@ h1{
 .chart{
     padding: 6px;
     border: 2px solid darkgray;
-    color: forestgreen
 
 }
 h2{
@@ -83,4 +82,17 @@ h2{
     display: flex;
   
     justify-content: center;
+}
+h4{
+    color:#fafafa;
+    display: flex;
+    justify-content: center;
+
+}
+footer{
+    display: block;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    padding: 10px;
 }
