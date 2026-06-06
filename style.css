@@ -1,6 +1,6 @@
 body{
           /* vertical alignment */
-    background: linear-gradient(145deg, rgb(40, 13, 84), rgb(133, 33, 64));
+    background: #0F1117 ;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     font-size: large;
 }
@@ -8,7 +8,8 @@ header{
    
     border: none;
     display: flex;              /* turns flexbox on */
-    flex-wrap: wrap;            /* lets items wrap to next line if too narrow */
+    flex-wrap: wrap;      
+    flex-direction: column;
     justify-content: center;    /* horizontal alignment */
     align-items: center; 
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(wolf.jpg);
@@ -16,11 +17,32 @@ header{
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    color:lightgrey;
+    color:#fafafa;
     text-align: center;
 }
+.my-button{
+   
+  background-color: #2D6A4F; 
+  width:fit-content;
+  height:fit-content;
+  color: #fafafa;             
+  padding: 20px 30px;        
+  text-decoration: none;     
+  display: block;     
+ 
+  text-align: center;
+  border-radius: 5px;        
+  font-weight: bold;
+  margin: 2px auto;
+}
+
+.my-button:hover {
+  background-color: #1a4a34; /* Darker color when hovering */
+  transform: translateY(-3px);
+}
+
 h1{
-    color:lightgray;
+    color:#fafafa;
     display:flex;
     justify-content: center
 }
@@ -33,10 +55,10 @@ h1{
     align-items: center; 
 }
 .stat-card{
-    background: rgb(89, 17, 31);
+    background: #1A1A2E;
     border: 2px ;
     padding: 20px;
-    color: lightgray;
+    color: #fafafa;
     border-radius: 5px;
     min-width: 50px;
 
@@ -50,6 +72,15 @@ h1{
     font-size: larger;
     font-weight: bold;
 }
-#charts{
+.chart{
+    padding: 6px;
+    border: 2px solid darkgray;
+    color: forestgreen
 
+}
+h2{
+    color:#fafafa;
+    display: flex;
+  
+    justify-content: center;
 }

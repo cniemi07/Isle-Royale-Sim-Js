@@ -1,5 +1,8 @@
 
-const canvas = document.getElementById("pop-chart").getContext("2d");
+const wolfCanvas = document.getElementById("pop-chart1").getContext("2d");
+
+const mooseCanvas = document.getElementById("pop-chart2").getContext("2d");
+
 
 const data = {
        years: [1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,
@@ -18,18 +21,34 @@ const data = {
                  510,515,750,975,1050,1250,1300,1600,1500,2060,
                  null,1346,967,840,524]
 }
-new Chart(canvas, {type: 'line', data: {
+new Chart(wolfCanvas, {type: 'line', data: {
     labels: data.years,
     datasets: [
         {
             label: "wolves",
             data:data.wolves,
-            borderColor: 'red'
+            borderColor: '#1a4a34'
         },
+    ]
+}, options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'Wolf Population Chart'
+      }
+    }
+  },})
+new Chart(mooseCanvas, {type: 'line', data: {
+    labels: data.years,
+    datasets: [
         {
             label: "moose",
             data: data.moose,
-            borderColor: "blue"
+            borderColor: "#2D6A4F"
         }
     ]
 }, options: {
@@ -40,7 +59,7 @@ new Chart(canvas, {type: 'line', data: {
       },
       title: {
         display: true,
-        text: 'Population Chart'
+        text: 'Moose Population Chart'
       }
     }
   },})
