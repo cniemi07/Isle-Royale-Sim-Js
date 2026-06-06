@@ -1,0 +1,35 @@
+body{
+          /* vertical alignment */
+    background: linear-gradient(145deg, rgb(40, 13, 84), rgb(133, 33, 64));
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-size: large;
+}
+header{
+   
+    border: 2px solid darkgrey;
+    display: flex;              /* turns flexbox on */
+    flex-wrap: wrap;            /* lets items wrap to next line if too narrow */
+    justify-content: center;    /* horizontal alignment */
+    align-items: center; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(wolf.jpg);
+    min-height: 400px; 
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:lightgrey;
+    text-align: center;
+}
+#stats{
+    display: flex;             /* turns flexbox on */
+                     /* space between children */
+    flex-wrap: wrap;            /* lets items wrap to next line if too narrow */
+    justify-content: center;    /* horizontal alignment */
+    align-items: center; 
+}
+th{
+      border:2px solid black;
+    border-radius: 5px;
+}
+#charts{
+
+}
