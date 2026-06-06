@@ -6,7 +6,7 @@ body{
 }
 header{
    
-    border: 2px solid darkgrey;
+    border: none;
     display: flex;              /* turns flexbox on */
     flex-wrap: wrap;            /* lets items wrap to next line if too narrow */
     justify-content: center;    /* horizontal alignment */
@@ -19,16 +19,36 @@ header{
     color:lightgrey;
     text-align: center;
 }
+h1{
+    color:lightgray;
+    display:flex;
+    justify-content: center
+}
 #stats{
-    display: flex;             /* turns flexbox on */
-                     /* space between children */
-    flex-wrap: wrap;            /* lets items wrap to next line if too narrow */
-    justify-content: center;    /* horizontal alignment */
+    display: flex;  
+    gap: 24px;    
+    padding: 20px 40px;
+    flex-wrap: wrap;           
+    justify-content: center;    
     align-items: center; 
 }
-th{
-      border:2px solid black;
+.stat-card{
+    background: rgb(89, 17, 31);
+    border: 2px ;
+    padding: 20px;
+    color: lightgray;
     border-radius: 5px;
+    min-width: 50px;
+
+}
+.pop{
+    font-size: small;
+    color:rgba(240, 248, 255, 0.643)
+
+}
+.pop-num{
+    font-size: larger;
+    font-weight: bold;
 }
 #charts{
 

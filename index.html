@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="icon" type="image/jpg" href="wolf.jpg">
      <link rel="stylesheet" href="style.css">
+    <script src ="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+     <script src="app.js" defer></script>
      <title>Isle Royale Wolf-Moose Population Simulator</title>
 </head> 
 <body>
@@ -14,33 +16,37 @@
     
     <p>Interactive ecological simulation built on 45 years of real field data.</p>
 </header>
-
+<h1>The Stats</h1> 
+       <hr>
     <div id = "stats">
-       <h1>The Stats</h1> 
        
-       <table>
-        <tr>
-            <th>Peak Moose Population</th> 
-        <th>Peak Wolf Population</th>
-        <th>Current Moose Population</th>
-        <th>Current Wolf Population</th>
-        </tr>
-        <tr>
-            <th>1,427</th>
-            <th>51</th>
-            <th>133</th>
-            <th>6</th>
-            
-        </tr>
+
+       <div class="stat-card">
+        <p class="pop">Peak Moose Population</p>
+       <p class="pop-num"> 1,427</p>
+       </div>
+       <div class="stat-card">
+        <p class="pop">Peak Wolf Population</p>
+       <p class="pop-num">51</p>
+       </div>
+       <div class="stat-card">
+        <p class="pop">Current Moose Population</p>
+       <p class="pop-num">524</p>
+       </div>
+       <div class="stat-card">
+        <p class="pop">Current Wolf Population</p>
+       <p class="pop-num">37</p>
+       </div>
 
 
-       </table> 
-
-        
 
     </div>
+    
+
+
     <div id= "charts">
-        <h2> </h2>
+        <canvas id ="pop-chart"></canvas>
+
        
     </div>
 
